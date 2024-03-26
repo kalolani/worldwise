@@ -4,6 +4,7 @@ function product() {
     <div>
       <PageNav />
       <h1>product</h1>
+      <h1>products</h1>
     </div>
   );
 }
