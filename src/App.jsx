@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="product" element={<Product />} />
-          <Route path="price" element={<Price />} />
+          <Route path="priceing" element={<Price />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
