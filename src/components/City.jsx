@@ -51,13 +51,7 @@ function City() {
         </a>
       </div>
 
-<<<<<<< HEAD
       <div>{/*<ButtonBack /> */}</div>
-=======
-      <div>
-        <ButtonBack />
-      </div>
->>>>>>> 36d479a1a39beab9aad16e821571c646764fcbe9
     </div>
   );
 }
