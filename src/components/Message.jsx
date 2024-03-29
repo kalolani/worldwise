@@ -1,5 +1,6 @@
 import styles from "./Message.module.css";
 
+// eslint-disable-next-line react/prop-types
 function Message({ message }) {
   return (
     <p className={styles.message}>
