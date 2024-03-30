@@ -1,9 +1,21 @@
 {
   "cities": [
     {
+      "cityName": "Addis Ababa",
+      "country": "Ethiopia",
+      "emoji": "ET",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 9.005401,
+        "lng": 38.763611
+      },
+      "id": 73930385
+    },
+    {
       "cityName": "Lisbon",
       "country": "Portugal",
-      "emoji": "🇵🇹",
+      "emoji": "PT",
       "date": "2027-10-31T15:59:59.138Z",
       "notes": "My favorite city so far!",
       "position": {
@@ -15,7 +27,7 @@
     {
       "cityName": "Madrid",
       "country": "Spain",
-      "emoji": "🇪🇸",
+      "emoji": "ES",
       "date": "2027-07-15T08:22:53.976Z",
       "notes": "",
       "position": {
@@ -27,7 +39,7 @@
     {
       "cityName": "Berlin",
       "country": "Germany",
-      "emoji": "🇩🇪",
+      "emoji": "DE",
       "date": "2027-02-12T09:24:11.863Z",
       "notes": "Amazing 😃",
       "position": {
@@ -39,7 +51,7 @@
     {
       "cityName": "barcelona",
       "country": "Spain",
-      "emoji": "🇪🇸",
+      "emoji": "ES",
       "date": "2027-07-15T08:22:53.976Z",
       "notes": "",
       "position": {
@@ -51,7 +63,7 @@
     {
       "cityName": "frankfurt",
       "country": "Germany",
-      "emoji": "🇩🇪",
+      "emoji": "DE",
       "date": "2027-02-12T09:24:11.863Z",
       "notes": "Amazing 😃",
       "position": {

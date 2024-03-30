@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Login from "./pages/Login";
 import Product from "./pages/Product";
@@ -16,10 +16,14 @@ const Base_Url = "http://localhost:9000";
 function App() {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const sleep = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
   useEffect(function () {
     async function fetchCities() {
       try {
         setIsLoading(true);
+
+        await sleep(500);
+
         const res = await fetch(`${Base_Url}/cities`);
         const data = await res.json();
         setCities(data);
@@ -40,10 +44,7 @@ function App() {
           <Route path="price" element={<Price />} />
           <Route path="login" element={<Login />} />
           <Route path="app" element={<AppLayout />}>
-            <Route
-              index
-              element={<CityList cities={cities} isLoading={isLoading} />}
-            />
+            <Route index element={<Navigate replace to="cities" />} />
             <Route
               path="cities"
               element={<CityList cities={cities} isLoading={isLoading} />}
