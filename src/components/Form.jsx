@@ -20,7 +20,11 @@ function Form() {
   const [date, setDate] = useState(new Date());
   const [notes, setNotes] = useState("");
 
+<<<<<<< HEAD
   const navigate = useNavigate();
+=======
+  const navigate = useNavgate();
+>>>>>>> 4d547c2c730b0007df06ccf149813537f49ca39e
 
   return (
     <form className={styles.form}>
