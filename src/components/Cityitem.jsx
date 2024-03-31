@@ -3,6 +3,7 @@
 import { Link } from "react-router-dom";
 import styles from "./cityItem.module.css";
 import FlagImoji from "./FlagImoji";
+import { useCities } from "../contexts/citiesProvider";
 // eslint-disable-next-line react/prop-types
 function CityItem({ city }) {
   // eslint-disable-next-line react/prop-types
@@ -15,12 +16,15 @@ function CityItem({ city }) {
     }).format(new Date(date));
 
   const { cityName, emoji, date, id, position } = city;
+  const { currentCity } = useCities();
   console.log(FlagImoji);
   return (
     <>
       <li>
         <Link
-          className={styles.cityItem}
+          className={`${styles.cityItem} ${
+            id === currentCity.id ? styles["cityItem--active"] : ""
+          }`}
           to={`${id}?lat=${position.lat}&lng=${position.lng}`}
         >
           <span className={styles.emoji}>

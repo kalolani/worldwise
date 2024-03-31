@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+
 import Login from "./pages/Login";
 import Product from "./pages/Product";
 import Price from "./pages/Price";
@@ -10,12 +11,12 @@ import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
 import Form from "./components/Form";
 import City from "./components/City";
-import citiesProvider from "./contexts/citiesProvider";
+import { CitiesProvider } from "./contexts/citiesProvider";
 
 function App() {
   return (
     <div>
-      <citiesProvider>
+      <CitiesProvider>
         <BrowserRouter>
           <Routes>
             <Route index element={<Homepage />} />
@@ -32,7 +33,7 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
-      </citiesProvider>
+      </CitiesProvider>
     </div>
   );
 }
