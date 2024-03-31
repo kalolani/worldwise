@@ -2,8 +2,10 @@ import styles from "./CountryList.module.css";
 import CountryItem from "./CountryItem";
 import Message from "./Message";
 import Spinner from "./Spinner";
+import useCities from "../contexts/citiesProvider";
 // eslint-disable-next-line react/prop-types
-function CountryList({ cities, isLoading }) {
+function CountryList() {
+  const { cities, isLoading } = useCities();
   if (isLoading) return <Spinner />;
   // eslint-disable-next-line react/prop-types
   if (!cities.length)

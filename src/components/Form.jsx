@@ -5,7 +5,6 @@ import { useState } from "react";
 import styles from "./Form.module.css";
 import Button from "./Button";
 
-// eslint-disable-next-line react-refresh/only-export-components
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
     .toUpperCase()

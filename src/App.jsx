@@ -10,55 +10,29 @@ import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
 import Form from "./components/Form";
 import City from "./components/City";
-
-const Base_Url = "http://localhost:9000";
+import citiesProvider from "./contexts/citiesProvider";
 
 function App() {
-  const [cities, setCities] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const sleep = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
-  useEffect(function () {
-    async function fetchCities() {
-      try {
-        setIsLoading(true);
-
-        await sleep(500);
-
-        const res = await fetch(`${Base_Url}/cities`);
-        const data = await res.json();
-        setCities(data);
-      } catch {
-        alert("there was an error loading data");
-      } finally {
-        setIsLoading(false);
-      }
-    }
-    fetchCities();
-  }, []);
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Homepage />} />
-          <Route path="product" element={<Product />} />
-          <Route path="price" element={<Price />} />
-          <Route path="login" element={<Login />} />
-          <Route path="app" element={<AppLayout />}>
-            <Route index element={<Navigate replace to="cities" />} />
-            <Route
-              path="cities"
-              element={<CityList cities={cities} isLoading={isLoading} />}
-            />
-            <Route path="cities/:id" element={<City />} />
-            <Route
-              path="countries"
-              element={<CountryList cities={cities} isLoading={isLoading} />}
-            />
-            <Route path="form" element={<Form />} />
-          </Route>
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <citiesProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Homepage />} />
+            <Route path="product" element={<Product />} />
+            <Route path="price" element={<Price />} />
+            <Route path="login" element={<Login />} />
+            <Route path="app" element={<AppLayout />}>
+              <Route index element={<Navigate replace to="cities" />} />
+              <Route path="cities" element={<CityList />} />
+              <Route path="cities/:id" element={<City />} />
+              <Route path="countries" element={<CountryList />} />
+              <Route path="form" element={<Form />} />
+            </Route>
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </citiesProvider>
     </div>
   );
 }
