@@ -10,7 +10,7 @@
         "lat": 9.005401,
         "lng": 38.763611
       },
-      "id": 91849
+      "id": "91849"
     },
     {
       "cityName": "Lisbon",
@@ -22,7 +22,7 @@
         "lat": 38.727881642324164,
         "lng": -9.140900099907554
       },
-      "id": 73930385
+      "id": "73930385"
     },
     {
       "cityName": "Madrid",
@@ -34,7 +34,7 @@
         "lat": 40.46635901755316,
         "lng": -3.7133789062500004
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
@@ -46,7 +46,103 @@
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
+    },
+    {
+      "id": "36a5",
+      "cityName": "‘Alem Gena",
+      "country": "Ethiopia",
+      "date": "2024-04-01T23:05:28.586Z",
+      "notes": "",
+      "emoji": "ET",
+      "position": {
+        "lat": "8.879644376420835",
+        "lng": "38.69522094726563"
+      }
+    },
+    {
+      "id": "6c19",
+      "cityName": "Dendi",
+      "country": "Ethiopia",
+      "date": "2024-04-01T23:05:38.246Z",
+      "notes": "",
+      "emoji": "ET",
+      "position": {
+        "lat": "9.009876988275504",
+        "lng": "38.30383300781251"
+      }
+    },
+    {
+      "id": "9d48",
+      "cityName": "Bishoftu",
+      "country": "Ethiopia",
+      "date": "2024-04-01T23:08:14.158Z",
+      "notes": "bishoftuko",
+      "emoji": "ET",
+      "position": {
+        "lat": "8.746650870360735",
+        "lng": "38.99871826171875"
+      }
+    },
+    {
+      "id": "6c7a",
+      "cityName": "Debre Birhan",
+      "country": "Ethiopia",
+      "date": "2024-04-01T23:11:01.044Z",
+      "notes": "debrebrhan",
+      "emoji": "ET",
+      "position": {
+        "lat": "9.66032316825502",
+        "lng": "39.66613769531251"
+      }
+    },
+    {
+      "id": "db79",
+      "cityName": "Awabel",
+      "country": "Ethiopia",
+      "date": "2024-04-01T23:12:59.528Z",
+      "notes": "debre mark",
+      "emoji": "ET",
+      "position": {
+        "lat": "10.331132026093936",
+        "lng": "38.0126953125"
+      }
+    },
+    {
+      "id": "6571",
+      "cityName": "Hagere Hiywet",
+      "country": "Ethiopia",
+      "date": "2024-04-01T23:13:39.144Z",
+      "notes": "ambo",
+      "emoji": "ET",
+      "position": {
+        "lat": "8.974610261405399",
+        "lng": "37.8643798828125"
+      }
+    },
+    {
+      "id": "b66d",
+      "cityName": "Midakegn",
+      "country": "Ethiopia",
+      "date": "2024-04-01T23:14:54.470Z",
+      "notes": "",
+      "emoji": "ET",
+      "position": {
+        "lat": "9.087180443666833",
+        "lng": "37.58148193359376"
+      }
+    },
+    {
+      "id": "631c",
+      "cityName": "Walmara",
+      "country": "Ethiopia",
+      "date": "2024-04-01T23:15:16.446Z",
+      "notes": "",
+      "emoji": "ET",
+      "position": {
+        "lat": "9.18344737101288",
+        "lng": "38.48098754882813"
+      }
     }
   ]
 }
