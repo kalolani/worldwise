@@ -5,11 +5,10 @@ import Spinner from "./Spinner";
 import { useCities } from "../contexts/citiesProvider";
 
 function CityList() {
-  const { cities, isLoading } = useCities();
+  const { cities, isLoading, error } = useCities();
   if (isLoading) return <Spinner />;
 
-  if (!cities.length)
-    return <Message message="add your first city by clicking on the map" />;
+  if (!cities.length) return <Message message={error} />;
   return (
     <ul className={styles.cityList}>
       {cities.map((city) => (

@@ -1,147 +1,87 @@
 {
   "cities": [
     {
+      "id": "ffea",
       "cityName": "Addis Ababa",
       "country": "Ethiopia",
+      "date": "2024-04-02T16:10:54.977Z",
+      "notes": "",
       "emoji": "ET",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
       "position": {
-        "lat": 9.005401,
-        "lng": 38.763611
-      },
-      "id": "91849"
+        "lat": "9.034290399259548",
+        "lng": "38.76937866210938"
+      }
     },
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "PT",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "id": "938c",
+      "cityName": "Nairobi",
+      "country": "Kenya",
+      "date": "2024-04-02T16:18:52.000Z",
+      "notes": "",
+      "emoji": "KE",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
+        "lat": "-1.323734761011294",
+        "lng": "36.82617187500001"
+      }
     },
     {
+      "id": "7e9e",
       "cityName": "Madrid",
       "country": "Spain",
+      "date": "2024-04-02T16:19:14.676Z",
+      "notes": "",
       "emoji": "ES",
-      "date": "2027-07-15T08:22:53.976Z",
+      "position": {
+        "lat": "40.371658891506094",
+        "lng": "-3.6914062500000004"
+      }
+    },
+    {
+      "id": "a0d8",
+      "cityName": "Paris",
+      "country": "France",
+      "date": "2024-04-02T16:20:32.119Z",
       "notes": "",
+      "emoji": "FR",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": "17806751"
+        "lat": "48.83760528293373",
+        "lng": "2.3593139648437504"
+      }
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "DE",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": "98443197"
-    },
-    {
-      "id": "36a5",
-      "cityName": "‘Alem Gena",
-      "country": "Ethiopia",
-      "date": "2024-04-01T23:05:28.586Z",
+      "id": "7c92",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "date": "2024-04-02T16:20:44.650Z",
       "notes": "",
-      "emoji": "ET",
+      "emoji": "GB",
       "position": {
-        "lat": "8.879644376420835",
-        "lng": "38.69522094726563"
+        "lat": "51.474540439419755",
+        "lng": "-0.13183593750000003"
       }
     },
     {
-      "id": "6c19",
-      "cityName": "Dendi",
-      "country": "Ethiopia",
-      "date": "2024-04-01T23:05:38.246Z",
+      "id": "0447",
+      "cityName": "Moscow",
+      "country": "Russian Federation (the)",
+      "date": "2024-04-02T16:22:07.490Z",
       "notes": "",
-      "emoji": "ET",
+      "emoji": "RU",
       "position": {
-        "lat": "9.009876988275504",
-        "lng": "38.30383300781251"
+        "lat": "55.74102787471819",
+        "lng": "37.62268066406251"
       }
     },
     {
-      "id": "9d48",
-      "cityName": "Bishoftu",
-      "country": "Ethiopia",
-      "date": "2024-04-01T23:08:14.158Z",
-      "notes": "bishoftuko",
-      "emoji": "ET",
-      "position": {
-        "lat": "8.746650870360735",
-        "lng": "38.99871826171875"
-      }
-    },
-    {
-      "id": "6c7a",
-      "cityName": "Debre Birhan",
-      "country": "Ethiopia",
-      "date": "2024-04-01T23:11:01.044Z",
-      "notes": "debrebrhan",
-      "emoji": "ET",
-      "position": {
-        "lat": "9.66032316825502",
-        "lng": "39.66613769531251"
-      }
-    },
-    {
-      "id": "db79",
-      "cityName": "Awabel",
-      "country": "Ethiopia",
-      "date": "2024-04-01T23:12:59.528Z",
-      "notes": "debre mark",
-      "emoji": "ET",
-      "position": {
-        "lat": "10.331132026093936",
-        "lng": "38.0126953125"
-      }
-    },
-    {
-      "id": "6571",
-      "cityName": "Hagere Hiywet",
-      "country": "Ethiopia",
-      "date": "2024-04-01T23:13:39.144Z",
-      "notes": "ambo",
-      "emoji": "ET",
-      "position": {
-        "lat": "8.974610261405399",
-        "lng": "37.8643798828125"
-      }
-    },
-    {
-      "id": "b66d",
-      "cityName": "Midakegn",
-      "country": "Ethiopia",
-      "date": "2024-04-01T23:14:54.470Z",
+      "id": "3641",
+      "cityName": "Rome",
+      "country": "Italy",
+      "date": "2024-04-02T16:22:27.604Z",
       "notes": "",
-      "emoji": "ET",
+      "emoji": "IT",
       "position": {
-        "lat": "9.087180443666833",
-        "lng": "37.58148193359376"
-      }
-    },
-    {
-      "id": "631c",
-      "cityName": "Walmara",
-      "country": "Ethiopia",
-      "date": "2024-04-01T23:15:16.446Z",
-      "notes": "",
-      "emoji": "ET",
-      "position": {
-        "lat": "9.18344737101288",
-        "lng": "38.48098754882813"
+        "lat": "41.705728515237524",
+        "lng": "12.832031250000002"
       }
     }
   ]
