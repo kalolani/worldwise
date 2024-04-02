@@ -12,28 +12,31 @@ import CountryList from "./components/CountryList";
 import Form from "./components/Form";
 import City from "./components/City";
 import { CitiesProvider } from "./contexts/citiesProvider";
+import { AuthProvider } from "./contexts/authProvider";
 
 function App() {
   return (
     <div>
-      <CitiesProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<Homepage />} />
-            <Route path="product" element={<Product />} />
-            <Route path="price" element={<Price />} />
-            <Route path="login" element={<Login />} />
-            <Route path="app" element={<AppLayout />}>
-              <Route index element={<Navigate replace to="cities" />} />
-              <Route path="cities" element={<CityList />} />
-              <Route path="cities/:id" element={<City />} />
-              <Route path="countries" element={<CountryList />} />
-              <Route path="form" element={<Form />} />
-            </Route>
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </CitiesProvider>
+      <AuthProvider>
+        <CitiesProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route index element={<Homepage />} />
+              <Route path="product" element={<Product />} />
+              <Route path="price" element={<Price />} />
+              <Route path="login" element={<Login />} />
+              <Route path="app" element={<AppLayout />}>
+                <Route index element={<Navigate replace to="cities" />} />
+                <Route path="cities" element={<CityList />} />
+                <Route path="cities/:id" element={<City />} />
+                <Route path="countries" element={<CountryList />} />
+                <Route path="form" element={<Form />} />
+              </Route>
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </CitiesProvider>
+      </AuthProvider>
     </div>
   );
 }
